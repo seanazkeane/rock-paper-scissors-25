@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors Oct 25!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Rock, Paper, Scissors UI</h1>
+        <div class="score-box">
+            <div id="player-score-box" class="box-left">
+                <h2>Player: </h2>
+            </div>
+            <div id="computer-score-box" class="box-right">
+                <h2>Computer: </h2>
+            </div>
+        </div>
+        <div class="message-box">
+            <h3 id="message">Press start to begin!</h3>
+        </div>
+        <div class="choices-box">
+            <div class="choice" data-choice="rock">
+                <p class="emoji">&#9994;</p>
+                <p id="rock">Rock</p>
+            </div>
+            <div class="choice" data-choice="paper"> 
+                <p class="emoji">&#x270B;</p>
+                <p id="paper">Paper</p>
+            </div>
+            <div class="choice" data-choice="scissors">
+                <p class="emoji">&#x270C;</p>
+                <p id="scissors">Scissors</p>
+            </div>
+        </div>
+        <div class="start-box hover">
+            <button id="start-button">Start</button>
+        </div>
+    </div>
     
     <script src="script.js"></script>
 </body>
